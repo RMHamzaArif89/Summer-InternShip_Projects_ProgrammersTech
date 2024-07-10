@@ -1,0 +1,36 @@
+.resume{
+    width: 100%;
+    height: calc(100vh - 3.4rem);
+    background-image: url('/images/service2.jpeg');
+    background-position: center;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+   
+   
+}
+
+.resume .resume-list{
+    height: 40%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.resume-list .resumeLink{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+    background: #1b1b1bec;
+    border: 1px solid blue;
+    border-radius: 6px;
+    padding: 1rem;
+
+}
+.resumeLink:hover{
+    background:rgba(20, 233, 222, 0.907);
+    color: darkblue;
+}

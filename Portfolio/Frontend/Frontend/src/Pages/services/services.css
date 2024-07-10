@@ -1,5 +1,56 @@
 .services{
     width: 100%;
     height: calc(100vh - 3.4rem);
-    background: linear-gradient(145deg,lightseagreen,lightblue);
+   background-image: url('/images/banner-bg.png');
+   background-position: center;
+   background-size: 100% 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
+.services-container{
+    width: 80%;
+    height: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+    
+}
+.service{
+    width: 45%;
+    height: 45%;
+   background: #1d1d1deb;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0.8rem;
+    border-radius: 18px;
+    justify-content: space-around;
+
+}
+.service:hover{
+    background: #313131ed;
+}
+.service .service-h1{
+    font-size: 2.2rem;
+    color: white;
+    text-align: center;
+}
+.service-det{
+    font-size: 1rem;
+    color:lightblue;
+
+}
+.service-projects{
+    font-size: 1.4rem;
+    color: red;
+}
+.service-btn{
+    padding: 12px;
+    border-radius: 12px;
+    background: #000;
+    color: white;
+}
+
+
