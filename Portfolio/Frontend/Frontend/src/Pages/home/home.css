@@ -1,0 +1,120 @@
+.home-con{
+    width: 100%;
+    height: calc(100vh - 3.4rem);
+    background: lightseagreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.home-con .home-container{
+    width: 60%;
+    height: 60%;
+    display: flex;
+   
+}
+.home-container .home-details{
+    width: 60%;
+    height: 70%;
+  
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+.home-container .home-img{
+    width: 40%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    padding: 0.6rem;
+
+    
+    
+}
+.home-img .img{
+    width: 80%;
+    height: 100%;
+    border-radius: 25px;
+  
+    background-image: url('/images/freepik_br_ca21bb92-ef84-4744-8380-5bdbe20a43e9.png');
+    background-position: center;
+    background-size: 100% 100%;
+    
+    
+    animation: imgAnimate 3s 0.4s infinite;
+    
+    
+    
+    
+}
+.home-img .img:hover{
+    background-image: url('/images/download.jpg');
+}
+@keyframes imgAnimate {
+    0%, 100%{
+        transform: translateY(0);
+
+    }
+    50%{
+        transform: translateY(-12px);
+    }
+    
+}
+.circle{
+    border: 3px solid blue;
+}
+
+.detail-role{
+    font-size: 2.4rem;
+    color: white;
+
+}
+.detail-name{
+    font-size: 3rem;
+    font-weight: bold;
+    color: blueviolet;
+}
+.detail-p{
+    font-size: 1rem;
+    color: blue;
+
+}
+.detail-btns{
+    width: 50%;
+    display: flex;
+    gap: 2rem;
+    align-items:center;
+    justify-content: center;
+}
+.btn{
+    font-size: 1.1rem;
+    color: white;
+    background: #000;
+    border: 1px solid blue;
+    padding: 0.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.btn:hover{
+    background: lightseagreen;
+}
+
+.work-detail{
+    width: 60%;
+    height: 7rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  
+}
+.work-box{
+    padding: 2rem;
+    font-size: 2rem;
+    color: white;
+    border: 1px solid white;
+    text-align: center;
+}
+
