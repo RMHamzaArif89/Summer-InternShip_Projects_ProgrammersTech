@@ -27,7 +27,10 @@
     background: #1b1b1bec;
     border: 1px solid blue;
     border-radius: 6px;
-    padding: 1rem;
+    padding: .5rem;
+    width:10rem;
+    text-align:center;
+
 
 }
 .resumeLink:hover{
