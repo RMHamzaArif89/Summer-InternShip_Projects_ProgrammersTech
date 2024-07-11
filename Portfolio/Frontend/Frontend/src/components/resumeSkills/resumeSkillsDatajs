@@ -1,0 +1,66 @@
+const Skills=[
+    {
+        heading:'Node JS',
+        image:'/images/nodejs.png'
+    },
+    {
+        heading:'Express JS',
+        image:'/images/expressjs.png'
+    },
+    {
+        heading:'Next JS',
+        image:'/images/nextjs.png'
+    },
+    {
+        heading:'React JS',
+        image:'/images/reactjs.png'
+    },
+    {
+        heading:'JS',
+        image:'/images/js.png'
+    },
+    {
+        heading:'MongoDB',
+        image:'/images/mongodb.png'
+    },
+    {
+        heading:'HTML',
+        image:'/images/html.png'
+    },
+    {
+        heading:'CSS',
+        image:'/images/css.png'
+    },
+    {
+        heading:'Bootstrap',
+        image:'/images/bootstrap.png'
+    },
+    {
+        heading:'GitHub',
+        image:'/images/github.png'
+    },
+    {
+        heading:'AWS',
+        image:'/images/aws.png'
+    },
+    {
+        heading:'SQL',
+        image:'/images/sql.png'
+    },
+    {
+        heading:'MYSQL',
+        image:'/images/mysql.png'
+    },
+    {
+        heading:'Tailwind CSS',
+        image:'/images/tailwindcss.png'
+    },
+    {
+        heading:'Problem Solving',
+        image:'/images/problemsolving.png'
+    },
+   
+
+]
+
+export default Skills;

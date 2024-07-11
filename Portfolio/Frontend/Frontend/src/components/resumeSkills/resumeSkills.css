@@ -1,0 +1,29 @@
+.resumeSkills{
+    width: 100%;
+    height: 80%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+}
+
+.resumeSkills .resumeSkillCard{
+   height: 7rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   
+    
+}
+.resumeSkillCard .heading{
+    text-align: center;
+    font-size: 1.3rem;
+    color: white;
+
+}
+.resumeSkillCard .img{
+    width: 100%;
+    height: 80%;
+}

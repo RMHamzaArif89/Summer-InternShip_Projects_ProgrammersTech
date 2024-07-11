@@ -17,6 +17,7 @@ import Projects from './Pages/projects/Projects'
 import Contact from './Pages/contact/Contact'
 import Layout from './Pages/Layout/Layout';
 import ResumeProjects from './components/resumeProjects/ResumeProjects';
+import ResumeSkills from './components/resumeSkills/ResumeSkills';
 
 
 
@@ -29,7 +30,7 @@ const router = createBrowserRouter(
           <Route path="/services"  element={<Services />} />
           <Route path='/resume' element={<Resume/>} >
             <Route path='/resume/resumeProjects' element={<ResumeProjects/>}/>
-            <Route path='/resume/skills' element={''}/>
+            <Route path='/resume/skills' element={<ResumeSkills/>}/>
             <Route path='/resume/WorkingStyle' element={''}/>
             <Route path='/resume/experience' element={''}/>
             <Route path='/resume/education' element={''}/>
