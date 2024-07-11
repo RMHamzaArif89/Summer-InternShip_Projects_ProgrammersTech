@@ -3,7 +3,7 @@
     height: 3.4rem;
     display: flex;
     padding: 0.5rem 2rem;
-    background: lightblue;
+    background: lightseagreen;
 }
 
 /* nav-detail class left side */
@@ -48,7 +48,7 @@
  .nav-links a {
    display: inline-block; 
    position: relative; 
-   color: blue;
+   color: darkblue;
    padding: 0.4rem 0;
  }
  
@@ -60,7 +60,7 @@
    height: 3px; 
    bottom: 0;
    left: 0; 
-   background-color:red;
+   background-color:black;
    transform-origin: bottom right; 
    transition: transform 0.4s ease-out; 
  }
