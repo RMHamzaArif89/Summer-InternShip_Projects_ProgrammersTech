@@ -1,0 +1,35 @@
+.contact{
+    width: 100%;
+    min-height:calc(100vh - 3.4rem) ;
+    display: flex;
+    background: linear-gradient(180deg,rgba(16, 16, 16, 0.95),rgba(20, 20, 20, 0.915));
+}
+.contactForm{
+    width: 50%;
+    height: 60%;
+    border: 1px solid lightblue;
+    display: flex;
+
+}
+.contactForm .contactInput{
+    width: 80%;
+    border-radius: 14px;
+    background: black;
+    color: white;
+    padding: 0.4rem;
+    display: flex;
+    justify-content: space-around;
+}
+.contactForm .contactImg{
+   width: 50%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.contactImg .img{
+    height: 30%;
+    background-image: url('/images/contactImg');
+    background-position: center;
+    background-size: 100% 100%;
+}

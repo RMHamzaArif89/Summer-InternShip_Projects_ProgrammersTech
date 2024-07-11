@@ -1,0 +1,28 @@
+.resumeExperience{
+    width: 100%;
+    min-height: 70%;
+    max-height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border: 2px solid rgb(48, 187, 234);
+    background-image: url('/images/exprience');
+    background-size: 100% 100%;
+    background-position: center;
+    border-radius: 16px;
+
+}
+.resumeExperience .heading{
+    display: flex;
+    align-items: center;
+    
+}
+.heading .headingImg{
+    width: 3rem;
+    height: 3rem;
+}
+.heading .headingData{
+    font-size: 1.2rem;
+    color: rgb(89, 227, 235);
+}
+

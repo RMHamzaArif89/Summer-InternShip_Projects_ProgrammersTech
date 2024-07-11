@@ -18,6 +18,8 @@ import Contact from './Pages/contact/Contact'
 import Layout from './Pages/Layout/Layout';
 import ResumeProjects from './components/resumeProjects/ResumeProjects';
 import ResumeSkills from './components/resumeSkills/ResumeSkills';
+import ResumeWorkingStyle from './components/resumeWorStyle/ResumeWorkingStyle';
+import ResumeExperience from './components/resumeExperience/resumeExperience';
 
 
 
@@ -29,10 +31,10 @@ const router = createBrowserRouter(
           <Route path="/" index element={<Home />} />
           <Route path="/services"  element={<Services />} />
           <Route path='/resume' element={<Resume/>} >
-            <Route path='/resume/resumeProjects' element={<ResumeProjects/>}/>
+            <Route path='/resume/resumeProjects' index element={<ResumeProjects/>}/>
             <Route path='/resume/skills' element={<ResumeSkills/>}/>
-            <Route path='/resume/WorkingStyle' element={''}/>
-            <Route path='/resume/experience' element={''}/>
+            <Route path='/resume/WorkingStyle' element={<ResumeWorkingStyle/>}/>
+            <Route path='/resume/experience' element={<ResumeExperience/>}/>
             <Route path='/resume/education' element={''}/>
           </Route>
           <Route path='/projects' element={<Projects/>} />
