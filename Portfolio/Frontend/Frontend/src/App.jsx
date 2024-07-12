@@ -19,7 +19,7 @@ import Layout from './Pages/Layout/Layout';
 import ResumeProjects from './components/resumeProjects/ResumeProjects';
 import ResumeSkills from './components/resumeSkills/ResumeSkills';
 import ResumeWorkingStyle from './components/resumeWorStyle/ResumeWorkingStyle';
-import ResumeExperience from './components/resumeExperience/resumeExperience';
+import ResumeExperience from './components/resumeExperience/ResumeExperience';
 
 
 

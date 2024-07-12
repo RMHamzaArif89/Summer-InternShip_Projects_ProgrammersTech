@@ -2,6 +2,8 @@
     width: 100%;
     height: calc(100vh - 3.4rem);
    background-image: url('/images/banner-bg.png');
+   background-image: linear-gradient(rgba(0, 0, 0, 0.658),
+                       rgba(0, 0, 0, 0.629)), url("/images/banner-bg.png");
    background-position: center;
    background-size: 100% 100%;
    display: flex;
@@ -49,8 +51,12 @@
 .service-btn{
     padding: 12px;
     border-radius: 12px;
-    background: #000;
+    background: lightseagreen;
     color: white;
+}
+.service-btn:hover{
+    background: rgba(25, 139, 134, 0.797);
+    cursor: pointer;
 }
 
 
