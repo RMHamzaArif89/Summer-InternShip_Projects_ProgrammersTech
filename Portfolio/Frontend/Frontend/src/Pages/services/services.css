@@ -9,6 +9,25 @@
    display: flex;
    align-items: center;
    justify-content: center;
+   position: relative;
+}
+.contactInfo{
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    padding: 0.2rem 0.8rem;
+    border-radius: 8px;
+    background: lightseagreen;
+    color: black;
+    font-size: 1rem;
+    display: flex;
+    gap: 0.3rem;
+    align-items: center;
+    cursor: pointer;
+}
+.contactInfoImg{
+    width: 1.5rem;
+    height: 1.5rem;
 }
 .services-container{
     width: 80%;

@@ -1,14 +1,15 @@
 import React from 'react'
 import './contact.css'
+import { motion } from "framer-motion";
 
 function Contact() {
   return (
     <div className='contact'>
      <div className="contactCon">
-      <div className="contactInfo">
+      <motion.div  whileTap={{ scale: 0.85 }} className="contactInfo">
         <img src="/images/contacts.png" alt="" className="contactInfoImg" />
         Contact Information
-      </div>
+      </motion.div>
       
      <form action="" className="contactForm">
       <div className="contactHeading">Contact Me to get service</div>
@@ -24,7 +25,7 @@ function Contact() {
         </select>
         <textarea name="message" className='contactMessage contactInput' placeholder='Message'>
         </textarea>
-        <input type="submit" value="Send Message" className='contactBtn' />
+        <motion.input  whileTap={{ scale: 0.85 }} type="submit" value="Send Message" className='contactBtn' />
 
       </form>
       <div className="contactImg">

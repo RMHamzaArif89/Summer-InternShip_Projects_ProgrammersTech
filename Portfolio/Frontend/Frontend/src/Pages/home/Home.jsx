@@ -1,6 +1,9 @@
 import React from 'react'
 import './home.css'
-import {motion} from 'framer-motion'
+import { motion, useMotionValue, useTransform, animate } from "framer-motion";
+import { useCountUp } from 'react-countup'
+import homeData from './homeData';
+import CountUp from 'react-countup'
 
 function Home() {
   return (
@@ -16,48 +19,55 @@ function Home() {
             I'm excited to tackle with more problems & make more projects.
           </div>
           <div className="detail-btns">
-            <div className="btn-github btn">
-             GitHub
-            </div>
-            <div className="btn-resume btn">
-            Download CV
-            </div>
+            <motion.div whileTap={{ scale: 0.85 }} className="btn-github btn">
+              GitHub
+            </motion.div>
+            <motion.div whileTap={{ scale: 0.85 }} className="btn-resume btn">
+              Download CV
+            </motion.div>
           </div>
         </div>
         <div className="home-img">
-         
-            <motion.div className='img' 
-            initial={{opacity:0, scale:0.1}}
+
+          <motion.div className='img'
+            initial={{ opacity: 0, scale: 0.1 }}
             animate={{
-              opacity:1,
-              transition:{
-                duration:0.4,
-                ease:'easeIn'
-                ,scale:1
+              opacity: 1,
+              transition: {
+                duration: 0.4,
+                ease: 'easeIn'
+                , scale: 1
               }
             }}
-            >
-        
+          >
 
-           
-            </motion.div>
-          
+
+
+          </motion.div>
+
         </div>
       </div>
       <div className="work-detail">
-        <div className="work-box projects">100+
-        <div className="box-text">Projects</div></div>
-        <div className="work-box repos">40+
-        <div className="box-text">Repos</div></div>
-        <div className="work-box commits">400+
-        <div className="box-text">Commits</div></div>
-        <div className="work-box internships">1
-        <div className="box-text">Internships</div></div>
+        {
+          homeData.map((data) => {
+            return (
+              <div className="work-box">
+                <CountUp
+                end={data.value}
+                duration={4}
+                delay={1}
 
+                />+
+                <div className="box-text">{data.name}</div>
+              </div>
+
+            )
+          })
+        }
       </div>
-      
+
     </div>
-    
+
   )
 }
 
