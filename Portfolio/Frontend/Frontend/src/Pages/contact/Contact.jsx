@@ -1,12 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './contact.css'
 import { motion } from "framer-motion";
+import ContactInfo from '../../components/contactInfo/ContactInfo';
 
 function Contact() {
+  const [showInfo,setShowInfo]=useState(false)
   return (
     <div className='contact'>
+      {
+        showInfo && <ContactInfo setInfo={setShowInfo} />  
+      }
      <div className="contactCon">
-      <motion.div  whileTap={{ scale: 0.85 }} className="contactInfo">
+      <motion.div onClick={()=>setShowInfo(!showInfo)}  whileTap={{ scale: 0.85 }} className="contactInfoBtn">
         <img src="/images/contacts.png" alt="" className="contactInfoImg" />
         Contact Information
       </motion.div>

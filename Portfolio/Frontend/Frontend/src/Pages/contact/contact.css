@@ -7,7 +7,25 @@
     background: linear-gradient(180deg,rgba(16, 16, 16, 0.95),rgba(20, 20, 20, 0.915));
     padding: 2rem;
     align-items: center;
+    position: relative;
     
+}
+.contactInfoBtn{
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    padding: 0.3rem 0.6rem;
+    border-radius: 6px;
+    display: flex;
+    gap: 0.3rem;
+    background: lightseagreen;
+    font-size: 1rem;
+    align-items: center;
+    cursor: pointer;
+}
+.contactInfoBtn .contactInfoImg{
+    width: 1.5rem;
+    height: 1.5rem;
 }
 .contactCon{
     width: 90%;

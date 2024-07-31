@@ -1,15 +1,15 @@
 import { useState } from 'react'
 import './App.css'
-import * as React from "react";
 import * as ReactDOM from "react-dom/client";
 import {
   createBrowserRouter,
   createRoutesFromElements,
   Route,
   RouterProvider,
-  useLoaderData,
+  useLocation
 
 } from "react-router-dom";
+
 import Home from './Pages/home/Home'
 import Services from './Pages/services/Services'
 import Resume from './Pages/resume/Resume'
@@ -22,10 +22,10 @@ import ResumeWorkingStyle from './components/resumeWorStyle/ResumeWorkingStyle';
 import ResumeExperience from './components/resumeExperience/ResumeExperience';
 
 
-
+// const location=useLocation()
 const router = createBrowserRouter(
     createRoutesFromElements(
-    <Route  element={<Layout/>}>
+    <Route element={<Layout/>}>
      
        
           <Route path="/" index element={<Home />} />
@@ -45,6 +45,7 @@ const router = createBrowserRouter(
 ));
 
 function App(){
+ 
     return(
         <RouterProvider router={router}/>
     
