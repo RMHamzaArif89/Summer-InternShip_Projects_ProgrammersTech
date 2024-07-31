@@ -6,7 +6,7 @@ const homeData=[
     },
     {
         name:'Repos',
-        value:'400',
+        value:'450',
 
     },
     {
