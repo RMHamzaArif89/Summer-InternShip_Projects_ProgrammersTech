@@ -5,7 +5,7 @@ import { useCountUp } from 'react-countup'
 import homeData from './homeData';
 import CountUp from 'react-countup'
 import { Typewriter } from 'react-simple-typewriter'
-import Transition from '../../components/Transition';
+
 
 
 function Home() {
@@ -111,4 +111,4 @@ function Home() {
   )
 }
 
-export default Transition(Home)
+export default Home
