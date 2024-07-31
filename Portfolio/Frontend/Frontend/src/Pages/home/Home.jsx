@@ -3,13 +3,18 @@ import './home.css'
 import { motion, useMotionValue, useTransform, animate } from "framer-motion";
 import { useCountUp } from 'react-countup'
 import homeData from './homeData';
+import { homeImgCubeData } from './homeData';
 import CountUp from 'react-countup'
 import { Typewriter } from 'react-simple-typewriter'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Pagination, EffectCube } from 'swiper/modules'
+import 'swiper/css';
+import 'swiper/css/effect-cube';
 
 
 
 function Home() {
- 
+
 
 
 
@@ -21,37 +26,37 @@ function Home() {
           <div className="detail-role">MERN Stack Devloper</div>
           <div className="detail-name" id='app'>
             {''}
-          <span style={{ color: 'blueviolet', fontWeight: 'bold' }}>
-          {/* Style will be inherited from the parent element */}
-          <Typewriter
-            words={["i'm RM Hamza"]}
-            loop={2}
-            cursor
-            cursorStyle='|'
-            typeSpeed={100}
-            deleteSpeed={70}
-            delaySpeed={1000}
-           
-          />
-        </span>
+            <span style={{ color: 'blueviolet', fontWeight: 'bold' }}>
+              {/* Style will be inherited from the parent element */}
+              <Typewriter
+                words={["i'm RM Hamza"]}
+                loop={2}
+                cursor
+                cursorStyle='|'
+                typeSpeed={100}
+                deleteSpeed={70}
+                delaySpeed={1000}
+
+              />
+            </span>
           </div>
-          <div className="detail-name2">   
-       {' '}
-        <span style={{ color: 'lightblue', fontWeight: 'bold' }}>
-          {/* Style will be inherited from the parent element */}
-          <Typewriter
-            words={['MERN Stack Developer','React JS Developer','Backend Developer']}
-            loop={5}
-            cursor
-            cursorStyle='|'
-            typeSpeed={100}
-            deleteSpeed={70}
-            delaySpeed={1000}
-           
-          />
-        </span>
-      
-            
+          <div className="detail-name2">
+            {' '}
+            <span style={{ color: 'lightblue', fontWeight: 'bold' }}>
+              {/* Style will be inherited from the parent element */}
+              <Typewriter
+                words={['MERN Stack Developer', 'React JS Developer', 'Backend Developer']}
+                loop={5}
+                cursor
+                cursorStyle='|'
+                typeSpeed={100}
+                deleteSpeed={70}
+                delaySpeed={1000}
+
+              />
+            </span>
+
+
           </div>
           <div className="detail-p">
             MERN stack devloper passionate enough to learn new techonologies and skills. I have created lots of practical projects for better understading of logic.
@@ -67,23 +72,41 @@ function Home() {
             </motion.div>
           </div>
         </div>
+        {/* img using cube display */}
         <div className="home-img">
-
-          <motion.div className='img'
-            initial={{ opacity: 0, scale: 0.1 }}
-            animate={{
-              opacity: 1,
-              transition: {
-                duration: 0.4,
-                ease: 'easeIn'
-                , scale: 1
-              }
+          <Swiper
+            effect={'cube'}
+            grabCursor={true}
+            autoplay={{
+              delay: 2000,
+              pauseOnMouseEnter: true,
+              disableOnInteraction: false
+              // disableOnInteraction: false
             }}
+            loop={true}
+            cubeEffect={{
+              shadow: true,
+              slideShadows: true,
+              shadowOffset: 20,
+              shadowScale: 0.94,
+            }}
+            pagination={true}
+            modules={[Autoplay, EffectCube, Pagination]}
+            className="homeImgSwiper"
           >
+            {
+              homeImgCubeData.map((data) => {
+                return (
+                  <SwiperSlide className='homeImgSwiperSlide' style={{backgroundImage:`url(${data.img})`}}>
 
+                    <div className="homeImgCubeHeading">{data.heading}</div>
 
+                  </SwiperSlide>
+                )
+              })
+            }
 
-          </motion.div>
+          </Swiper>
 
         </div>
       </div>

@@ -8,13 +8,13 @@
     flex-direction: column;
 }
 .home-con .home-container{
-    width: 60%;
+    width: 70%;
     height: 60%;
     display: flex;
    
 }
 .home-container .home-details{
-    width: 60%;
+    width: 70%;
     height: 70%;
   
     display: flex;
@@ -22,47 +22,33 @@
     gap: 1rem;
     padding: 1rem;
 }
-.home-container .home-img{
-    width: 40%;
-    height: 60%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-   
-    padding: 0.6rem;
-
-    
-    
+.homeImgSwiper{
+    width: 20rem;
+    height: 20rem;
 }
-.home-img .img{
-    width: 80%;
-    height: 100%;
-    border-radius: 25px;
-  
-    background-image: url('/images/myImg.png');
-    background-position: center;
+.homeImgSwiperSlide {
+    width: 100% !important;
+    height: 100% !important;
     background-size: 100% 100%;
-    
-    
-    animation: imgAnimate 3s 0.4s infinite;
-    
-    
-    
-    
+    background-position: center;
+    border-radius: 0.2rem;
+    border: none;
+    background: white;
+    background-size: 100% 100%;
+    background-position:center;
+    position: relative;
 }
-.home-img .img:hover{
-    background-image: url('/images/download.jpg');
-}
-@keyframes imgAnimate {
-    0%, 100%{
-        transform: translateY(0);
 
-    }
-    50%{
-        transform: translateY(-12px);
-    }
-    
+.homeImgCubeHeading {
+    font-size: 1.8rem;
+    color: rgb(107, 220, 214);
+    font-weight: bold;
+    position: absolute;
+    top: .1rem;
+    text-align: center;
 }
+
+
 .circle{
     border: 3px solid blue;
 }
@@ -83,8 +69,8 @@
     color: blueviolet;
 }
 .detail-p{
-    font-size: 1rem;
-    color: blue;
+    font-size: 1.1rem;
+    color: black;
 
 }
 .detail-btns{
@@ -113,13 +99,22 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    gap: 1.4rem;
   
 }
 .work-box{
     padding: 2rem;
     font-size: 2rem;
     color: white;
-    border: 1px solid white;
+    border: 1px solid black;
     text-align: center;
+    background: #000000ad;
+    font-weight: bold;
+    width: 22rem;
+}
+.work-box:hover{
+    background: lightseagreen;
+    color: black;
+    cursor: pointer;
 }
 
